@@ -1,16 +1,19 @@
----
-layout: compress
----
-
-<!DOCTYPE html>
-<html lang="en" itemscope itemtype="http://schema.org/WebPage" {% if page.main-class %}class="post-{{ page.main-class }}"{% endif %}>
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
     {% include head.html %}
-    <body>
-        {% include svg-icons.html %}
-        {% include header-default.html %}
-            <section class="content">
-                {{ content }}
-            </section>
-        {% include footer.html %}
-    </body>
+	<body>
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+       {% include header.html %}
+         {{ content }}
+
+       {% include footer.html %}
+			</div>
+	</body>
 </html>

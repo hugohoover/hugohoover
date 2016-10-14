@@ -1,0 +1,13 @@
+#+TITLE:test
+#+OPTIONS: toc:nil
+---
+layout: post
+title: test
+subtitle: 強迫症專區
+date: 2016-10-14
+author: hugohoover
+---
+
+** 無聊的時候
+可以用header-h1的border和nav的對齊。
+多進行幾次以後，心情就好起來了。

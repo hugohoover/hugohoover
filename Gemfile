@@ -4,4 +4,7 @@ source "https://rubygems.org"
 
 # gem "rails"
 
-gem 'jekyll-compose', group: [:jekyll_plugins]
+gem 'rake'
+gem 'jekyll'
+gem 'sass'
+gem 'rouge'
