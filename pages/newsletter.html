@@ -1,0 +1,21 @@
+---
+layout: page
+title: Newsletter
+---
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="text-center">
+        <ul style="list-style-type: none">
+           {% for post in site.posts %}
+             <li>
+               <a href=" {{ post.url }}"><strong>{{ post.title }}</strong> | <em>{{ post.date | date: "%d %B %Y" }}</em></a>
+             </li>
+             <li><em>{{ post.excerpt }}</em></li>
+			  <hr>
+           {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

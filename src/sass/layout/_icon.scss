@@ -1,0 +1,94 @@
+/* Icon */
+
+	.icon {
+		@include icon;
+		border-bottom: none;
+		position: relative;
+
+		> .label {
+			display: none;
+		}
+	}
+
+/* List */
+
+	ol {
+		&.default {
+			list-style: decimal;
+			padding-left: 1.25em;
+
+			li {
+				padding-left: 0.25em;
+			}
+		}
+	}
+
+	ul {
+		&.default {
+			list-style: disc;
+			padding-left: 1em;
+
+			li {
+				padding-left: 0.5em;
+			}
+		}
+
+		&.icons {
+			cursor: default;
+
+			li {
+				display: inline-block;
+				font-size: 1.25em;
+				line-height: 1em;
+				padding-left: 0.5em;
+
+				&:first-child {
+					padding-left: 0;
+				}
+
+				a, span {
+					@include vendor('transition', 'background-color 0.2s ease-in-out');
+					border-radius: 100%;
+					border: solid 1px _palette(border);
+					display: inline-block;
+					height: 2em;
+					line-height: 2em;
+					text-align: center;
+					width: 2em;
+
+					&:hover {
+						background: _palette(border-bg);
+					}
+				}
+			}
+		}
+
+		&.actions {
+			cursor: default;
+			text-align: center;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+			li {
+				display: inline-block;
+				padding: 0 0 0 1.5em;
+
+				&:first-child {
+					padding: 0;
+				}
+			}
+
+			&.vertical {
+				li {
+					display: block;
+					padding: 1.5em 0 0 0;
+
+					&:first-child {
+						padding: 0;
+					}
+				}
+			}
+		}
+	}

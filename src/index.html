@@ -1,0 +1,74 @@
+---
+layout: default
+title: Startseite
+---
+
+<!-- One -->
+	<section id="one" class="wrapper spotlight style1">
+		<div class="inner">
+			<a href="#" class="image"><img src="images/projekte/ml/machinelearning0.jpeg" alt="" /></a>
+			<div class="content">
+				<h2 class="major">機器學習</h2>
+				<p>
+        	最早使用這個工具是在預測蛋白質熱穩定性的過程中，不過當時結果不理想。主要原因是自身能力不逮。現在深度學習和人工智能被炒得很熱，原理是一脈相承，關鍵看應用領域的專業背景。
+        </p>
+				<a href="#" class="special">Weitere Informationen</a>
+			</div>
+		</div>
+	</section>
+
+<!-- Two -->
+	<section id="two" class="wrapper alt spotlight style2">
+		<div class="inner">
+			<a href="#" class="image"><img src="images/hem/infovisual.jpg" alt="" /></a>
+			<div class="content">
+				<h2 class="major">信息可視化</h2>
+
+				<a href="#" class="special">Weitere Informationen</a>
+			</div>
+		</div>
+	</section>
+
+<!-- Three -->
+	<section id="three" class="wrapper spotlight style3">
+		<div class="inner">
+			<a href="#" class="image"><img src="images/hem/nB4JFIO433.jpg" alt="" /></a>
+			<div class="content">
+				<h2 class="major">Misc</h2>
+				<h3>語言學習</h3>
+				<p>
+					正在學習德語和瑞典語。duolingo是個很好的入門工具，降低了學習曲線的陡峭程度。
+				</p>
+				<h3>寫作和排版</h3>
+				<p>
+					我們所受的計算機教育是從windows開始的，所以microsoft office一直伴隨著學習和工作。但是我一直很不喜歡MS Office的那種排版方式。
+
+					LaTeX是終極的排版工具。於是我很樂於轉向這種寫作方式。
+
+					最近比較感興趣的是org-mode + jekyll + gulp。加上之前折騰的TeX，我已經能完成現有主流展示系統了，前端和出版物。
+				</p>
+				<a href="#" class="special">Weitere Informationen</a>
+			</div>
+		</div>
+	</section>
+
+<!-- Four -->
+	<section id="four" class="wrapper alt style1">
+		<div class="inner">
+			<h2 class="major">Newsletters</h2>
+			<p>我們將新聞和進展整理成業務通訊。這樣可以系統性地掌握領域的發展現狀和趨勢，從而及時調整策略和方法。</p>
+			<section class="features">
+				{% for image in site.projekte %}
+					<article>
+						<a href="{{ image.link }}" class="image"><img src="{{ image.image_path }}" alt="{{ image.title }}"/></a>
+						<h3 class="major">{{ image.title }}</h3>
+						<p>{{ image.description }}</p>
+						<a href="#" class="special">Weitere Informationen</a>
+					</article>
+				{% endfor %}
+			</section>
+			<ul class="actions">
+				<li><a href="/pages/projekte.html" class="button special fit">Mehr</a></li>
+			</ul>
+		</div>
+	</section>

@@ -1,0 +1,29 @@
+---
+layout: page
+title: Projekte
+description: 目前進行的項目是前端設計。
+---
+
+<section id="four" class="wrapper alt style1">
+  <div class="inner">
+    <h2 class="major">{{ page.title | upcase }}</h2>
+    <!-- <div class="12u$">
+      <span class="image fit">
+        <img src="../images/hem/infovisual.jpg" alt="" />
+      </span>
+    </div> -->
+    <p>目前進行的項目羅列如下：</p>
+
+
+    <section class="features">
+      {% for image in site.projekte %}
+        <article>
+          <a href="{{ image.link }}" class="image"><img src="{{ image.image_path }}" alt="{{ image.title }}" style="-webkit-filter: sepia(100%)" /></a>
+          <h3 class="major">{{ image.title }}</h3>
+          <p>{{ image.description }}</p>
+          <a href="#" class="special">Learn more</a>
+        </article>
+      {% endfor %}
+    </section>
+  </div>
+</section>

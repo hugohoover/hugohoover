@@ -1,14 +1,20 @@
 ---
 layout: default
 ---
+
 <!-- Wrapper -->
 <section id="wrapper">
 	<header>
 		<div class="inner">
 			<h2>{{ page.title }}</h2>
-      <div id="particles-js"></div>
-			<p><em>{{ page.description}}</em></p>
+			<h3>{{ page.subtitle }}</h3>
+			<p>{{ page.description }}</p>
 		</div>
 	</header>
-  {{ content }}
+	<!-- Content -->
+	<div class="wrapper">
+		<div class="inner">
+			{{ content }}
+		</div>
+	</div>
 </section>

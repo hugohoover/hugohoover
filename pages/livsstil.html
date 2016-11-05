@@ -1,0 +1,23 @@
+---
+layout: page
+title: livsstil
+description: livsstil
+---
+
+<h3 class="major">livsstil</h3>
+<p>
+	現在我的生活就是一團亂麻。 但是好在正在改變。 通過liquid語言的學習，用jekyll來記錄我的得失，我相信會好起來的。
+</p>
+
+<section class="features">
+	{% for post in site.posts %}
+	<!-- {% if post.categories=="livsstil" %} -->
+	<article>
+		<a href="{{ post.url | prepend: site.baseurl }}" class="image"><img src="{{ post.image_path }}" alt="{{ post.title }}" style="-webkit-filter: sepia(100%)" /></a>
+		<h3 class="major">{{ post.title | upcase }}</h3>
+		<p>{{ post.excerpt | truncatewords: 83 }}</p>
+		<a href="{{ post.url }}" class="special">Learn more</a>
+	</article>
+	<!-- {% endif %} -->
+	{% endfor %}
+</section>

@@ -1,0 +1,76 @@
+/* Image */
+
+	.image {
+		border: 0;
+		display: inline-block;
+		position: relative;
+
+		&:after {
+			@include vendor('transition', 'opacity 0.25s ease-in-out');
+			background-image: url('/images/overlay.png');
+			content: '';
+			display: block;
+			height: 100%;
+			left: 0;
+			opacity: 0.2;
+			position: absolute;
+			top: 0;
+			width: 100%;
+		}
+
+		img {
+			display: block;
+		}
+
+		&.fit {
+			display: block;
+
+			img {
+				display: block;
+				width: 100%;
+			}
+		}
+
+		&.feature {
+			display: block;
+			margin: 0 0 2em 0;
+
+			img {
+				display: block;
+				width: 100%;
+			}
+		}
+
+		&.icon {
+			@include vendor('perspective', '500px');
+
+			&:before {
+				@include vendor('transition', ('transform 0.1s ease-in-out', 'font-size 0.1s ease-in-out'));
+				color: #fff;
+				font-size: 6em;
+				height: 1em;
+				left: 50%;
+				line-height: 1em;
+				margin: -0.5em 0 0 -0.5em;
+				position: absolute;
+				text-align: center;
+				top: 50%;
+				width: 1em;
+				z-index: 1;
+			}
+
+			&:hover {
+				&:before {
+					@include vendor('transform', 'translateZ(1em)');
+				}
+
+				&:after {
+					opacity: 1;
+				}
+			}
+		}
+	}
+
+	span.image.icon {
+		cursor: default;
+	}

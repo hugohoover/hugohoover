@@ -1,17 +1,31 @@
-title: hugohoover
-subtitle: HTML5 to Jekyll
-baseurl: ""
+name: HuwsProjekte
 url: ""
-
-highlight: rouge
-
-future: true
+baseurl: ""
+cover: "/assets/img/cover.jpg"
+logo:  "/assets/img/logo.png"
+email: hugohoover.denovo@gmail.com
+twitter_username: HuwHoover
+github_username: hugohoover
 
 markdown: kramdown
+highlighter: rouge
 
 exclude:
-  - org
+  - "_bak"
+  - "_origin"
+  - "_sources"
+  - node_modules
+  - gulpfile.js
+  - package.json
   - Gemfile
   - Gemfile.lock
   - README.md
+  - LICENSE.md
   - _dev
+  - org
+
+future: true
+
+collections:
+  - projekte
+  - posts

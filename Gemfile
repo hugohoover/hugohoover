@@ -4,7 +4,7 @@ source "https://rubygems.org"
 
 # gem "rails"
 
-gem 'rake'
 gem 'jekyll'
-gem 'sass'
+gem 'rake'
 gem 'rouge'
+gem 'listen'

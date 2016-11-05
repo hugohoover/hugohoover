@@ -1,0 +1,113 @@
+// Misc.
+	$misc: (
+		z-index-base:			10000,
+		max-wrapper-styles:		6
+	);
+
+// Duration.
+	$duration: (
+		menu:					0.35s,
+		transition:				0.2s
+	);
+
+// Size.
+	$size: (
+		border-radius:			5px,
+		element-height:			2.75em,
+		element-margin:			2em,
+		inner:					55em,
+		section-spacing:		(
+			large:				3em,
+			medium:				2em,
+			small:				1.75em
+		),
+		wrapper-edges:			(
+			large:				6.5em,
+			medium:				4.75em,
+			small:				2.5em
+		)
+	);
+
+// Font.
+	$font: (
+		family:					('Source Sans Pro', Helvetica, sans-serif),
+		family-fixed:			('Courier New', monospace),
+		family-heading:			(Raleway, Helvetica, sans-serif),
+		weight:					300,
+		weight-bold:			600,
+		weight-heading:			200,
+		weight-heading-bold:	700,
+		kern-heading:			0.1em
+	);
+
+	// COLORS
+		$Tigerlily: #E15D44;
+		$BlueTurquoise: #55B4B0;
+		$FuchsiaRose: #C3447A;
+		$LilacGrey: #9896A4;
+		$IkeaYellow: #FFCC00;
+		$IkeaBlue: #003399;
+		$OuterSpace: #2D383A;
+		$Turquoise: #45B8AC;
+	// hottest for 2017
+		$Niagara: #5484A4;
+		$PrimroseYellow: #F6D155;
+		$LapisBlue: #004B8D;
+		$Flame: #F2552C;
+		$IslandParadise: #95DEE3;
+		$PinkYarrow: #CE3175;
+		$Kale: #5A7247;
+	// diy
+		$TextsLight: #fff;
+		$Texts: #171717;
+		$HugoBlue: #4c5c96;
+		$HugoLight: #F2F2F2;
+
+// Palette.
+	$palette0: (
+		bg:				$OuterSpace,
+		fg:				$TextsLight,
+		fg-light:		$TextsLight,
+		fg-bold:		$TextsLight,
+		border:			rgba($TextsLight,0.75),
+		border-bg:		rgba($TextsLight,0.15),
+		border-bg2:		rgba($TextsLight,0.35),
+
+		accent1: (
+			bg:			$LilacGrey,
+			fg:			rgba(255,255,255,0.8),
+			fg-light:	rgba(255,255,255,0.5),
+			fg-bold:	#ffffff
+		),
+
+		accent2: (
+			bg:			$Niagara,
+			fg:			rgba(255,255,255,0.8),
+			fg-light:	rgba(255,255,255,0.35),
+			fg-bold:	#ffffff
+		)
+	);
+
+	$palette: (
+		bg:				#ffffff,
+		fg:				#6e6e6e,
+		fg-light:		#888888,
+		fg-bold:		#5b5b5b,
+		border:			rgba(224,224,224,0.75),
+		border-bg:		rgba(224,224,224,0.15),
+		border-bg2:		rgba(224,224,224,0.35),
+
+		accent1: (
+			bg:			#4eb980,
+			fg:			rgba(255,255,255,0.8),
+			fg-light:	rgba(255,255,255,0.5),
+			fg-bold:	#ffffff
+		),
+
+		accent2: (
+			bg:			#544d55,
+			fg:			rgba(255,255,255,0.8),
+			fg-light:	rgba(255,255,255,0.35),
+			fg-bold:	#ffffff
+		)
+	);

@@ -1,0 +1,32 @@
+---
+layout: page
+title: TagCanvas example page
+---
+
+
+    <h1>TagCanvas example page</h1>
+    <div id="myCanvasContainer">
+      <canvas width="300" height="300" id="myCanvas">
+        <p>Anything in here will be replaced on browsers that support the canvas element</p>
+      </canvas>
+    </div>
+
+    <div id="tags">
+      <ul>
+        <li><a href="http://www.google.com" target="_blank">Google</a></li>
+        <li><a href="/fish">Fish</a></li>
+        <li><a href="/chips">Chips</a></li>
+        <li><a href="/salt">Salt</a></li>
+        <li><a href="/vinegar">Vinegar</a></li>
+      </ul>
+    </div>
+
+    <div id="tags">
+      <ul>
+        {% for tag in site.tags %}
+        <a href="{{site.baseurl}}/tags/?tag={{tag[0] | cgi}}" title="{{ tag[0] }}">
+          {{ tag[0] }}<sup>{{ tag[1].size }}</sup>&nbsp;
+        </a>
+        {% endfor %}
+      </ul>
+    </div>

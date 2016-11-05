@@ -1,0 +1,23 @@
+---
+layout: page
+title: MRSA
+description: 多重耐藥性金黃色葡萄球菌是全球性的健康負擔，每年因這種頑固致病菌死亡的人數
+---
+
+<h3 class="major">MRSA</h3>
+<p>
+	Methicillin-resistant Staphylococcus aureus (MRSA) is a bacteria that is resistant to many antibiotics. Staph and MRSA can cause a variety of problems ranging from are skin infections and sepsis to pneumonia to bloodstream infections. <em>(via CDC.USA)</em>
+</p>
+
+<section class="features">
+	{% for post in site.posts %}
+	{% if post.categories=="mrsa" %}
+		<article>
+			<a href="{{ post.url }}" class="image"><img src="{{ post.image_path }}" alt="{{ post.title }}" style="-webkit-filter: sepia(100%)" /></a>
+			<h3 class="major">{{ post.title | upcase }}</h3>
+			<p>{{ post.excerpt | truncatewords: 83 }}</p>
+			<a href="{{ post.url }}" class="special">Learn more</a>
+		</article>
+		{% endif %}
+	{% endfor %}
+</section>
